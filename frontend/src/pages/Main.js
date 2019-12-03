@@ -24,6 +24,7 @@ export default function Main({ match }) {
   }, [match.params.id]);
 
   async function handleLike(id) {
+    //Rota de Like
     console.log("idLike: ", id);
     await api.post(`/devs/${id}/like`, null, {
       headers: { user: match.params.id }
@@ -32,6 +33,7 @@ export default function Main({ match }) {
     setUsers(users.filter(user => user._id !== id));
   }
   async function handleDislike(id) {
+    //Rota de Deslike
     console.log("idDislike: ", id);
     await api.post(`/devs/${id}/dislikes`, null, {
       headers: { user: match.params.id }
