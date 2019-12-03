@@ -30,7 +30,7 @@ mongoose
 
 server.use(routes); // passando arquivos de rotas
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
   console.log("server startado, na porta: " + PORT);
