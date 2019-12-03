@@ -45,7 +45,7 @@ export default function Main({ match }) {
       <div className="main-container">
         <img src={logo} alt="Tindev" />
 
-        {user.length > 0 ? (
+        {users.length > 0 ? (
           <ul>
             {users.map(user => (
               <li key={user._id}>
